@@ -90,7 +90,7 @@
 
          /********* Projects container ******/
          > .ProjectContainer{
-            background: linear-gradient(to right ,($mdMaroon), ($dMaroon));
+            background: $dMaroon;
             width: 100%;
             height: 80vh;
             display: flex;
