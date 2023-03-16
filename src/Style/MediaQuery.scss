@@ -1,0 +1,16 @@
+@media screen and (max-width: 350px) {
+       #header{
+         > .left {
+              justify-content: space-evenly;
+              padding: 0px 0px;
+             > .menu{
+                width: 1.6rem;
+                height: 1.6rem;
+             }
+         }
+          > .setting{
+            width: 1.6rem;
+            height: 1.6rem;
+          }
+       }
+}

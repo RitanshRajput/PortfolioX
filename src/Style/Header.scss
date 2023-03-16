@@ -1,0 +1,51 @@
+
+#header{
+    background-color: $mdMaroon;
+    color: $lWhite;
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    padding: 10px 15px;  
+    position: sticky;   
+    border: none;
+    outline: none;
+
+    > .left{
+        width: 13rem;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding : 0px 10px;
+
+        > .menu{
+            color: $lWhite;
+            width: 1.8rem;
+            height: 1.8rem;
+            transition: all 0.2s ease ;
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+        
+        > .heading{
+            width: 9rem;
+            height: 2.5rem;
+            font-family: $montserrat;
+            font-weight: 600;
+            font-size: xx-large;
+        }
+    }
+
+    > .setting{
+        width: 1.8rem;
+        height: 1.8rem;
+        transition: all 0.3s ease;
+         &:hover{
+            transform: rotate(90deg);
+         }
+    }
+}
+

@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100&display=swap');
+
+@import 'Static' ;
+@import 'Header' ;
+@import 'Home' ;
+@import 'MediaQuery' ;
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    // background-color:  $dMaroon;
+    overflow-x: hidden ;
+ }
