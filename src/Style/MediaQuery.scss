@@ -14,3 +14,177 @@
           }
        }
 }
+
+@media screen and (max-width: 850px) {
+  .myself > .details > p{
+    letter-spacing: 0px;
+    word-spacing: 0.5px;
+    line-height: 145%;
+    font-family: $montserrat;
+    font-weight: 400;
+    font-size: medium;
+  }
+}
+
+
+@media screen and (max-width: 730px) {
+
+  .headImage{
+    > p{
+        font-size: small;
+        font-weight: 300;
+        margin-top: -20px;
+    }
+    
+    > h5{
+        font-size: medium;
+        font-weight: 500;
+    }
+}
+
+  .myself > .details{
+    > p{
+      letter-spacing: 0px;
+      word-spacing: 0.5px;
+      line-height: 145%;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+
+
+  .myself > .details{
+    > p{
+      line-height: 125%;
+      font-family: $montserrat;
+      font-weight: 300;
+      font-size: medium;
+    }
+    > .skill-container{
+      height: 32vh;
+      padding: 3px;
+      margin-top: 2rem ;
+
+      > .heading{
+          background-color: $dMaroon;
+          box-shadow: 0px 0px 10px 0px white;
+          color: $lWhite;
+          height: 2rem;
+          display: flex;
+          justify-content: center;
+          margin: 0px 0px 15px 0px ;
+          align-items: center;
+          font-family: $montserrat;
+          font-size: x-large;
+          font-weight: 300 ;
+          border-radius: 20px;
+      }
+
+      > .skills{
+          color: $lWhite;
+          width: 100%;
+          height: 22vh;
+          margin: 7px 0px;
+          display: flex;
+          justify-content: space-evenly;
+          flex-wrap: wrap;
+
+          > div{
+              height: 2.1rem;
+              padding: 0px 15px;
+              font-family:  $golos;
+              font-size: small;
+              margin: 2px 2px;
+               &:hover{
+                  cursor: pointer;
+               }
+          }
+      }
+  }
+  }
+}
+
+
+@media screen and (max-width: 550px) {
+
+
+  .myself > .details{
+    > p{
+      line-height: 145%;
+      font-weight: 300;
+      font-size: small;
+    }
+    > .skill-container{
+
+      > .heading{
+          font-size: larger;
+          font-weight: 400 ;
+      }
+
+      > .skills{
+          height: 25vh;
+          margin: 0px 0px;
+
+          > div{
+              height: 1.8rem;
+              padding: 0px 10px;
+              font-size: small;
+              margin: 2px 2px;
+               &:hover{
+                  cursor: pointer;
+               }
+          }
+      }
+  }
+  }
+}
+
+
+
+@media screen and (max-width: 450px) {
+
+
+  .myself > .details{
+    > p{
+      line-height: 125%;
+      font-weight: 200;
+      font-size: smaller;
+    }
+    > .skill-container{
+
+      > .skills{
+          > div{
+              height: 1rem;
+              padding: 0px 5px;
+              font-size: small;
+              margin: 1px 1px;
+          }
+      }
+  }
+  }
+}
+
+@media screen and (max-width: 395px) {
+
+
+  .myself > .details{
+    > p{
+      line-height: 140%;
+      font-weight: 300;
+      font-size: x-small;
+    }
+    > .skill-container{
+      > .skills{
+        height: 20vh;
+
+          > div{
+              height: 20px;
+              padding: 1px 3px;
+              font-size: small;
+              margin: 1px 1px;
+          }
+      }
+  }
+  }
+}

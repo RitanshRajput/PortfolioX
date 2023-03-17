@@ -66,19 +66,22 @@ const Myself = () => (
           Currently, I am looking for an internship and a full-time position as a software developer.
           I hope you like my presentation, I would appreciate your feedback and love to hear from you.
         </p>
-        <div className="skill">
-        <span>Skills</span> 
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>SCSS</span>
-        <span>TAILWIND</span>
-        <span>BOOTSTRAP</span>
-        <span>JAVASCRIPT</span>
-        <span>REACT JS</span>
+        <div className="skill-container">
+        <div className='heading'>Skills </div> 
+        <div className='skills'>
+        <div className='html'>HTML</div>
+        <div className='css'>CSS</div>
+        <div className='scss'>SCSS</div>
+        <div className='tailwind'>TAILWIND</div>
+        <div className='bootstrap'>BOOTSTRAP</div>
+        <div className='javascript'>JAVASCRIPT</div>
+        <div className='react'>REACT JS</div>
+        <div className='cpp'>C++</div>
+        </div>
         </div>
        </div>
-      <div className="img">
-        <img src={cool} alt="" />
+      <div className="image">
+        <img src={cool} alt="boy image" />
       </div>
      </div>
 ) ;
