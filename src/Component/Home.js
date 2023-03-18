@@ -6,6 +6,7 @@ import samurai from '../Assets/samurai.png' ;
 import tree from '../Assets/tree.png' ;
 import underTree from '../Assets/underTree.png' ;
 import cool from '../Assets/cool.png'
+import Footer from './Footer';
 
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
     <div id='home' className='carousel-container'> 
         <MyCarousel />
         <Myself />
+        <Footer />
     </div>
   ) 
 } ;
@@ -54,7 +56,7 @@ const MyCarousel = () => (
 </Carousel>  
 ) ;
 
-
+// Myself details code
 const Myself = () => (
      <div className="myself">
        <div className="details">

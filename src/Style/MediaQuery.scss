@@ -1,20 +1,14 @@
-@media screen and (max-width: 350px) {
-       #header{
-         > .left {
-              justify-content: space-evenly;
-              padding: 0px 0px;
-             > .menu{
-                width: 1.6rem;
-                height: 1.6rem;
-             }
-         }
-          > .setting{
-            width: 1.6rem;
-            height: 1.6rem;
-          }
-       }
+// 920pxx
+@media screen and (max-width: 920px) {
+ footer{
+    > .container > .link > .msg{
+      font-size: large;
+     }
+  }
 }
 
+
+// 850px 
 @media screen and (max-width: 850px) {
   .myself > .details > p{
     letter-spacing: 0px;
@@ -26,16 +20,14 @@
   }
 }
 
-
+// 730px 
 @media screen and (max-width: 730px) {
-
   .headImage{
     > p{
         font-size: small;
         font-weight: 300;
         margin-top: -20px;
-    }
-    
+    } 
     > h5{
         font-size: medium;
         font-weight: 500;
@@ -49,11 +41,17 @@
       line-height: 145%;
     }
   }
+
+  footer{
+    > .container > .link > .msg{
+      font-size: medium;
+     }
+  }
 }
 
+
+// 650pxx
 @media screen and (max-width: 650px) {
-
-
   .myself > .details{
     > p{
       line-height: 125%;
@@ -80,7 +78,6 @@
           font-weight: 300 ;
           border-radius: 20px;
       }
-
       > .skills{
           color: $lWhite;
           width: 100%;
@@ -103,12 +100,16 @@
       }
   }
   }
+
+  footer{
+    > .container > .link > .msg{
+      font-size: small;
+     }
+  }
 }
 
-
+// 550px 
 @media screen and (max-width: 550px) {
-
-
   .myself > .details{
     > p{
       line-height: 145%;
@@ -116,12 +117,10 @@
       font-size: small;
     }
     > .skill-container{
-
       > .heading{
           font-size: larger;
           font-weight: 400 ;
       }
-
       > .skills{
           height: 25vh;
           margin: 0px 0px;
@@ -134,16 +133,28 @@
                &:hover{
                   cursor: pointer;
                }
-          }
+            }
+         }
       }
-  }
+   }
+
+   footer{
+    > .container{
+      > .arrowUp{
+        p{
+          font-size: x-small;
+        }
+      }
+      > .link > .msg{
+        font-size: x-small;
+       }
+    }
+
   }
 }
 
-
-
+// 450pxx
 @media screen and (max-width: 450px) {
-
 
   .myself > .details{
     > p{
@@ -163,28 +174,58 @@
       }
   }
   }
+
+  footer{
+    > .container{
+      > .arrowUp{
+        > a{
+          border-radius: 50px;
+          height: 40%;
+          width: 50%;
+        }
+        p{
+          font-size:7px;
+        }
+      }
+      > .link > .msg{
+        font-size: 7px;
+       }
+    }
+
+  }
+  
 }
 
+
+// 395px 
 @media screen and (max-width: 395px) {
-
-
-  .myself > .details{
-    > p{
-      line-height: 140%;
-      font-weight: 300;
-      font-size: x-small;
-    }
-    > .skill-container{
+  .myself {
+    flex-direction: column-reverse; 
+     >.details{
+      background-color: black;
+      width: 90%;
+     > h2{
+      font-size: x-large;
+      }
+     > p{
+      line-height: 150%;
+      font-weight: 400;
+      font-size: small;
+      }
+     > .skill-container{
       > .skills{
         height: 20vh;
-
           > div{
               height: 20px;
               padding: 1px 3px;
               font-size: small;
               margin: 1px 1px;
           }
+       }
+     }
+   }
+      > .image{
+        display:none;
       }
-  }
   }
 }

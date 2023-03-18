@@ -31,7 +31,7 @@ const SidePanel = ({menuOpen, setMenuOpen}) => (
       <div className="ProjectContainer">
          <h3 className="title">Minor Projects </h3>
          <div className="linkContainer">
-         <Link onClick={()=> setMenuOpen(false)} className="link" to={'/'} >Calculator</Link>
+         <Link onClick={()=> setMenuOpen(false)} className="link" to={'/'} >Home</Link>
          <Link onClick={()=> setMenuOpen(false)} className="link" to={'/'} >Calculator</Link>
          <Link onClick={()=> setMenuOpen(false)} className="link" to={'/'} >Calculator</Link>
          <Link onClick={()=> setMenuOpen(false)} className="link" to={'/'} >Calculator</Link>
