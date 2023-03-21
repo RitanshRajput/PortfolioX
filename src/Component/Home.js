@@ -74,7 +74,7 @@ const Myself = () => (
         <div className='html'>HTML</div>
         <div className='css'>CSS</div>
         <div className='scss'>SCSS</div>
-        <div className='tailwind'>TAILWIND</div>
+        <div className='tailwind'>TAILWIND CSS</div>
         <div className='bootstrap'>BOOTSTRAP</div>
         <div className='javascript'>JAVASCRIPT</div>
         <div className='react'>REACT JS</div>
@@ -83,7 +83,7 @@ const Myself = () => (
         </div>
        </div>
       <div className="image">
-        <img src={cool} alt="boy image" />
+        <img src={cool} alt=" " />
       </div>
      </div>
 ) ;
