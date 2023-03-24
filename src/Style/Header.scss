@@ -147,18 +147,26 @@
             justify-content: space-evenly;
 
              > button{
+                text-decoration: none;
                 width: 7rem;
                 height: 2.2rem;
                 background-color: $dMaroon;
-                color: $lMaroon;
                 border: 1px solid $grey;
                 border-radius: 20px;
                 transition: all 0.5s ease;
                 &:hover{
                    background: linear-gradient(to bottom ,($mdMaroon), ($dMaroon));
                    transform: scale(1.2);
-                   color: $lWhite;
                    cursor: pointer;
+
+                   > .login-link{
+                    color: $lWhite;
+                   }
+                }
+                
+                > .login-link{
+                    text-decoration: none;
+                    color: $lMaroon;
                 }
              }
          }

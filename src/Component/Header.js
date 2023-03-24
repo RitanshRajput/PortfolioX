@@ -1,6 +1,7 @@
 import React  from "react";
 import { Link } from "react-router-dom";
-import { AiFillSetting, AiOutlineCloseCircle} from 'react-icons/ai' ;
+import {  AiOutlineCloseCircle} from 'react-icons/ai' ;
+import { BsFillSunFill } from 'react-icons/bs' ;
 import { RiApps2Fill } from 'react-icons/ri' ;
 
 const Header = ({menuOpen, setMenuOpen}) =>{
@@ -15,10 +16,9 @@ const Header = ({menuOpen, setMenuOpen}) =>{
        <div id="header" >
          <div className="left">
            <RiApps2Fill className="menu" onClick={()=> setMenuOpen(!menuOpen) } />
-           <a href="#home" className="heading"> <h2 onClick={homebutton}>Ritansh.</h2> </a>
-          
+           <Link className="heading" to={'/'}><h2 onClick={homebutton}>Ritansh.</h2></Link>
          </div>
-         <AiFillSetting  className="setting" />
+         <BsFillSunFill className="setting" />
       </div>
    </>      
     ) ;
@@ -37,15 +37,15 @@ const SidePanel = ({menuOpen, setMenuOpen}) => (
          <h3 className="title">Minor Projects </h3>
          <div className="linkContainer">
          <Link onClick={()=> setMenuOpen(false)} className="link" to={'/'} >Home</Link>
-         <Link onClick={()=> setMenuOpen(false)} className="link" to={'/calculator'} >Calculator</Link>
+         <Link onClick={()=> setMenuOpen(false)} className="link" to={'./calculator'} >Calculator</Link>
          <Link onClick={()=> setMenuOpen(false)} className="link" to={'/'} >Calculator</Link>
          <Link onClick={()=> setMenuOpen(false)} className="link" to={'/'} >Calculator</Link>
          <Link onClick={()=> setMenuOpen(false)} className="link" to={'/'} >Calculator</Link>
          </div>
       </div>
       <div className="login">
-         <button className="login">Log In</button>
-         <button className="signup">Sign Up</button>
+        <button onClick={()=> setMenuOpen(false)} className="login"><Link className="login-link" to={'./login'}>Log In</Link></button>
+        <button onClick={()=> setMenuOpen(false)} className="signup"><Link className="login-link" to={'./signup'}>Sign Up</Link></button>
       </div>
    </div> 
    </>
