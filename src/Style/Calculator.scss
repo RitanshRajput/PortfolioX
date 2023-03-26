@@ -2,7 +2,7 @@
 .calculator {
     width: 100%;
     height: 100vh;
-    background-color: $black;
+    background: linear-gradient( -30deg, $mdMaroon, $black);
     display: flex;
     flex-direction: column;
     align-items: center;

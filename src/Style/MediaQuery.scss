@@ -1,3 +1,10 @@
+//950px
+@media screen and (max-width: 950px ){
+  .todo > .main-container {
+    width: 50%;
+  }
+}
+
 // 920pxx
 @media screen and (max-width: 920px) {
  footer{
@@ -18,7 +25,12 @@
     font-weight: 400;
     font-size: medium;
   }
+
+  .todo > .main-container {
+    width: 55%;
+  }
 }
+
 
 // 730px 
 @media screen and (max-width: 730px) {
@@ -46,6 +58,10 @@
     > .container > .link > .msg{
       font-size: medium;
      }
+  }
+
+  .todo > .main-container {
+    width: 60%;
   }
 }
 
@@ -106,7 +122,13 @@
       font-size: small;
      }
   }
+
+  .todo > .main-container {
+    width: 70%;
+  }
 }
+
+
 
 // 550px 
 @media screen and (max-width: 550px) {
@@ -151,6 +173,10 @@
     }
 
   }
+
+  .todo > .main-container {
+    width: 85%;
+  }
 }
 
 // 450pxx
@@ -193,12 +219,48 @@
     }
 
   }
+
+  .login{
+    >form{
+      width: 80%;
+      height: 60vh;
+     
+      > .heading{
+        font-size: 1.5rem;
+      }
+
+      > .content{
+        width: 20rem ;
+        height: 20rem;
+      }
+    }
+  }
+
+  .signup{
+    > form{
+      width: 80%;
+      height: 60vh;
+
+     > .heading{
+      font-size: 1.5rem;
+     }
+     > .content {
+      width: 20rem;
+      height: 20rem;
+     }
+    }
+  }
+
+  .todo > .main-container {
+    width: 98%;
+  }
   
 }
 
 
 // 395px 
 @media screen and (max-width: 395px) {
+
   .myself {
     flex-direction: column-reverse; 
      >.details{
@@ -228,4 +290,43 @@
         display:none;
       }
   }
+
+  .sidePanel{
+    width: 19rem;
+  }
+
+  .login{
+    >form{
+      > .heading{
+        font-size: 1.3rem;
+      }
+
+      > .content{
+        width: 18rem ;
+        height: 18rem;
+      }
+    }
+  }
+
+  .signup{
+    >form{
+      > .heading{
+        font-size: 1.3rem;
+      }
+
+      > .content{
+        width: 18rem;
+        height: 18rem;
+      }
+    }
+  }
+
+  .todo > .main-container > .showItems > .eachItem {
+       > h3{
+        width: 90%;
+        font-size: 13px;
+        font-weight: 600;
+       }
+  }
+
 }

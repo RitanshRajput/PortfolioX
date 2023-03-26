@@ -6,9 +6,6 @@ import { RiApps2Fill } from 'react-icons/ri' ;
 
 const Header = ({menuOpen, setMenuOpen}) =>{
 
-    const homebutton = ()=> {
-      
-    } ;
 
     return( 
    <>
@@ -16,7 +13,7 @@ const Header = ({menuOpen, setMenuOpen}) =>{
        <div id="header" >
          <div className="left">
            <RiApps2Fill className="menu" onClick={()=> setMenuOpen(!menuOpen) } />
-           <Link className="heading" to={'/'}><h2 onClick={homebutton}>Ritansh.</h2></Link>
+           <Link className="heading" to={'/'}><h2 >Ritansh.</h2></Link>
          </div>
          <BsFillSunFill className="setting" />
       </div>
@@ -38,7 +35,7 @@ const SidePanel = ({menuOpen, setMenuOpen}) => (
          <div className="linkContainer">
          <Link onClick={()=> setMenuOpen(false)} className="link" to={'/'} >Home</Link>
          <Link onClick={()=> setMenuOpen(false)} className="link" to={'./calculator'} >Calculator</Link>
-         <Link onClick={()=> setMenuOpen(false)} className="link" to={'/'} >Calculator</Link>
+         <Link onClick={()=> setMenuOpen(false)} className="link" to={'/todo'} >Todo App</Link>
          <Link onClick={()=> setMenuOpen(false)} className="link" to={'/'} >Calculator</Link>
          <Link onClick={()=> setMenuOpen(false)} className="link" to={'/'} >Calculator</Link>
          </div>

@@ -5,6 +5,7 @@ import Home from './Component/Home' ;
 import Calculator from './Component/Calculator' ;
 import Login from './Component/Login' ;
 import Signup from './Component/Signup' ;
+import Todo from './Component/Todo' ;
 
 function App() {
  
@@ -18,6 +19,7 @@ function App() {
         <Route path='/calculator' element={<Calculator />} />
         <Route path='/login' element={<Login />} />
         <Route path='/signup' element={<Signup />} />
+        <Route path='/todo' element={<Todo />}  />
       </Routes>
     </BrowserRouter>
   );

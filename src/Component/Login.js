@@ -12,7 +12,7 @@ const Login =() => {
                <input type="password" placeholder="Password" required />
 
                <button type="button" className="forget">Forgot Password?</button>
-               <button type="button" className="loginBtn"> <Link className="loginLink" to={'/'}>Log In</Link> </button>
+               <button  className="loginBtn"> <Link className="loginLink" to={'/'}>Log In</Link> </button>
 
              <div className="newUser">
              <p>New User?</p>
@@ -20,6 +20,7 @@ const Login =() => {
              </div>  
                </div>
             </form>
+           
         </div>
     );
 }

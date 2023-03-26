@@ -1,0 +1,174 @@
+ .todo{
+    background: linear-gradient( 10deg ,$lMaroon, $dMaroon);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding-top: 3rem;
+    justify-content: center;
+
+    > .main-container{
+        width: 40%;
+        height: 85vh;
+        // background-color: grey;
+        overflow-y: hidden;
+        
+//image 
+        > figure{
+            width: 100%;
+            height: 6.5rem;
+            display: flex;
+            align-items: center;
+            padding-top: 5px;
+            flex-direction: column;
+
+            > img{
+                width: 60px;
+                height: 60px;
+                margin-bottom: 8px;
+                animation: imgTilting 0.8s linear infinite alternate;
+                    @keyframes imgTilting {
+                        to{
+                            transform:rotate(15deg) ;
+                        }
+                    }
+            }
+
+            > figcaption{
+               font-family: $golos;
+               font-weight: 400;
+               font-size: 1.3rem;
+               color: $lWhite;
+            }
+        }
+
+// ADD A TASK
+        > .addItems{
+            // background-color: red;
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            > input{
+                width: 65%;
+                height: 70%;
+                outline: none;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                border: none;
+                font-family: $montserrat;
+                font-size: 15px;
+                font-weight: 300;
+                padding: 0px 10px;
+            }
+
+            > svg{
+                background-color: $black;
+                color: $lWhite;
+                font-size: 35px;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
+        }
+
+// each tack container
+     > .item-container{
+        // background-color: palevioletred;
+        width: 100%;
+        height: 65%;
+        overflow-y: scroll;
+
+        > .showItems{
+            // background-color: palevioletred;
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+  
+           > .eachItem{
+              background: linear-gradient(200deg, purple, black);
+              color: wheat;
+              width: 69%;
+              height: 76%;
+              display: flex;
+              align-items: center;
+              margin: 3px 0px ;
+              border-top-left-radius: 5px;
+              border-bottom-left-radius: 5px;
+              border-top-right-radius: 5px;
+              border-bottom-right-radius: 5px;
+  
+              >.task{
+                background-color: white;
+                width: 83%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                padding: 0px 5px;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                font-family: $golos;
+                font-weight: 400;
+                color: $lMaroon;
+                text-decoration: none;
+              }
+  
+              > .trash{
+                  color: white;
+                  width: 9%;
+                  margin-left: 12px;
+                  height: 70%;
+                  &:hover{
+                    transform: scale(1.1);
+                }
+              }
+           }
+         }   
+     }
+    
+
+// check list button :
+       > .checkList{
+        background-color: black ;
+        width: 10rem;
+        height: 2.5rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2px;
+        margin-bottom: 5px;
+        border-radius: 5px;
+          
+         > button{
+            width: 100%;
+            height: 100%;
+            background-color: $black;
+            border: none;
+            border-radius: 5px;
+            transition: all 0.5s ease;
+            cursor: pointer;
+            &:hover span{
+                display: none;
+             }
+
+            &:hover:before{
+                content: "Remove All";
+                color: $lWhite;
+                font-family: $golos;
+                font-size: 20px;
+             }
+            
+            &:hover{
+                background-color: darkorchid;
+            }
+ 
+            > span{
+                color: $lWhite;
+                font-family: $golos;
+                font-size: 20px;
+            }
+         }
+       }
+    }
+ }

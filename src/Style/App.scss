@@ -7,6 +7,7 @@
 @import 'Footer' ;
 @import 'Login' ;
 @import 'Signup' ;
+@import 'Todo' ;
 @import 'MediaQuery' ;
 
 *{
@@ -20,4 +21,8 @@
 
 body {
     overflow-x: hidden ;
+}
+
+.stopScroll {
+    overflow: hidden;
 }
