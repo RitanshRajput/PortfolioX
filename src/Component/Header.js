@@ -1,15 +1,14 @@
 import React  from "react";
 import { Link } from "react-router-dom";
-import {  AiOutlineCloseCircle} from 'react-icons/ai' ;
+import { AiOutlineCloseCircle } from 'react-icons/ai' ;
 import { BsFillSunFill } from 'react-icons/bs' ;
 import { RiApps2Fill } from 'react-icons/ri' ;
 
 const Header = ({menuOpen, setMenuOpen}) =>{
 
-
-    return( 
+   return( 
    <>
-       <SidePanel setMenuOpen={setMenuOpen} menuOpen={menuOpen}/>
+      <SidePanel setMenuOpen={setMenuOpen} menuOpen={menuOpen}/>
        <div id="header" >
          <div className="left">
            <RiApps2Fill className="menu" onClick={()=> setMenuOpen(!menuOpen) } />
@@ -35,8 +34,8 @@ const SidePanel = ({menuOpen, setMenuOpen}) => (
          <div className="linkContainer">
          <Link onClick={()=> setMenuOpen(false)} className="link" to={'/'} >Home</Link>
          <Link onClick={()=> setMenuOpen(false)} className="link" to={'./calculator'} >Calculator</Link>
-         <Link onClick={()=> setMenuOpen(false)} className="link" to={'/todo'} >Todo App</Link>
-         <Link onClick={()=> setMenuOpen(false)} className="link" to={'/'} >Calculator</Link>
+         <Link onClick={()=> setMenuOpen(false)} className="link" to={'./todo'} >Todo App</Link>
+         <Link onClick={()=> setMenuOpen(false)} className="link" to={'./emojiSearch'} >Emoji Search</Link>
          <Link onClick={()=> setMenuOpen(false)} className="link" to={'/'} >Calculator</Link>
          </div>
       </div>

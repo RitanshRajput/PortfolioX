@@ -6,6 +6,7 @@ import Calculator from './Component/Calculator' ;
 import Login from './Component/Login' ;
 import Signup from './Component/Signup' ;
 import Todo from './Component/Todo' ;
+import EmojiSearch from './Component/EmojiSearch' ;
 
 function App() {
  
@@ -20,6 +21,7 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/signup' element={<Signup />} />
         <Route path='/todo' element={<Todo />}  />
+        <Route path='/emojiSearch' element={<EmojiSearch />}  />
       </Routes>
     </BrowserRouter>
   );
