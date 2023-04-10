@@ -330,3 +330,47 @@
   }
 
 }
+
+// 290px 
+@media screen and (max-width: 290px) {
+  #header > .left > .heading {
+      width: 8.5rem;  
+
+      > h2{
+    margin-top: 3px;
+    font-size: 2rem;
+    width: 8.5rem;
+  }
+  }
+}
+
+
+// 250px 
+@media screen and (max-width: 250px) {
+  #header {
+    > .left {
+    >.menu{
+      width: 40px;
+      margin-left: -15px;
+    }
+    
+    > .heading {
+       width: 8.5rem;  
+    > h2{
+    margin-top: 3px;
+    font-size: 2rem;
+    width: 8.5rem;
+  }
+}
+}
+> .setting{
+  width: 40px;
+  margin-right: -10px ;
+  }
+}
+
+#emojiSearch > center > h2{
+  font-size: large;
+}
+
+}
