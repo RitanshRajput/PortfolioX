@@ -331,6 +331,24 @@
 
 }
 
+//350px
+@media screen and (max-width: 350px) {
+  #imgGallery >center {  
+    >h2{
+      width: 14rem;
+      font-size: 1.9rem;
+      font-family: $golos;
+      font-weight: 400;
+      color: $lWhite;
+      padding: 5px 0px;
+    }
+
+    >form >.search{
+        width:  12.5rem;
+      }
+    }
+}
+
 // 290px 
 @media screen and (max-width: 290px) {
   #header > .left > .heading {

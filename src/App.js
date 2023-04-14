@@ -7,10 +7,12 @@ import Login from './Component/Login' ;
 import Signup from './Component/Signup' ;
 import Todo from './Component/Todo' ;
 import EmojiSearch from './Component/EmojiSearch' ;
+import ImgGallery from './Component/ImgGallery' ;
+
 
 function App() {
  
-  const [menuOpen, setMenuOpen] = useState(false) ;
+const [menuOpen, setMenuOpen] = useState(false) ;
 
   return (
     <BrowserRouter>
@@ -22,6 +24,7 @@ function App() {
         <Route path='/signup' element={<Signup />} />
         <Route path='/todo' element={<Todo />}  />
         <Route path='/emojiSearch' element={<EmojiSearch />}  />
+        <Route path='/imgGallery' element={<ImgGallery />}  />
       </Routes>
     </BrowserRouter>
   );

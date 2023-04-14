@@ -36,7 +36,7 @@ const SidePanel = ({menuOpen, setMenuOpen}) => (
          <Link onClick={()=> setMenuOpen(false)} className="link" to={'./calculator'} >Calculator</Link>
          <Link onClick={()=> setMenuOpen(false)} className="link" to={'./todo'} >Todo App</Link>
          <Link onClick={()=> setMenuOpen(false)} className="link" to={'./emojiSearch'} >Emoji Search</Link>
-         <Link onClick={()=> setMenuOpen(false)} className="link" to={'/'} >Calculator</Link>
+         <Link onClick={()=> setMenuOpen(false)} className="link" to={'./imgGallery'} >Image Gallery</Link>
          </div>
       </div>
       <div className="login">
